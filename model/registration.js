@@ -3,14 +3,6 @@
  
   // Step 2: Now Creating Schema
   const registrationSchema = new mongoose.Schema({
-
-      id: {
-        type: Number,
-        require: true,
-    
-
-
-      }
       name:{
           type:String,
           required: true

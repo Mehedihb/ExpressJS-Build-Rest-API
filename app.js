@@ -1,14 +1,8 @@
 const express = require ('express')
 const app = express();
-require('./config/database')
-const port = 3000;
-
-
-
-
-
-
-
+require('dotenv').config({path: './config.env'})
+const port = process.env.PORT || 3000
+require('./db/database')
 
 
 app.get('/',(req, res )=>{
